@@ -13,7 +13,7 @@ user1 = User()
 
 user.a = 1          # immutable, user1.a value didn't change
 user.b.append(2)    # mutable, user1.b values changed
-user1.a = user.a        
+user1.a = user.a    # even now each instanse has its own 'a'
 print("user a  = ", user.a, "\t\t(immutable)") 
 print("user b  = ", user.b, "\t(mutable)")
 print("user1 a = ", user1.a, "\t\t(immutable)")
